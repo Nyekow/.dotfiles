@@ -104,10 +104,6 @@ nnoremap <leader>t :term<CR>
 nnoremap <leader>f :Explore<CR>
 nnoremap <leader>g :Vexplore<CR>
 
-" Split les fenêtres
-nnoremap <leader>s <C-w>s
-nnoremap <leader>v <C-w>v
-
 " Navigation entre les fenêtres
 nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
