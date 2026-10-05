@@ -1,6 +1,19 @@
-"""""""""""""""""""""""""
-" Basic Vim settings    "
-"""""""""""""""""""""""""
+""""""""""""""""""""""
+" Basic Vim settings "
+""""""""""""""""""""""
+
+" Plugins
+if empty(glob("~/.vim/autoload/plug.vim"))
+    execute '!mkdir -p ~/.vim/plugged'
+    execute '!mkdir -p ~/.vim/autoload'
+    execute '!curl -fLo ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+endif
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'nanotech/jellybeans.vim'
+
+call plug#end()
 
 " Enable mouse support
 set mouse=a
@@ -13,7 +26,7 @@ set relativenumber
 syntax on
 
 " Set coloscheme
-colorscheme desert
+colorscheme jellybeans
 
 " Smart search
 set ignorecase
