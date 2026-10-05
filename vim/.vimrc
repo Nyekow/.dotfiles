@@ -102,7 +102,7 @@ nnoremap <leader>t :term<CR>
 
 " Lance nettrw
 nnoremap <leader>f :Explore<CR>
-nnoremap <leader>g :Vexplore<CR>
+nnoremap <leader>v :Vexplore<CR>
 
 " Navigation entre les fenêtres
 nnoremap <leader>h <C-w>h
